@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>COUNTDOWN</h1>
+    <div class="clock">
+      <div class="numbers">
+        <span class="numbs" id="hour">00</span>
+        <span class="dots">:</span>
+        <span class="numbs" id="minutes">00</span>
+        <span class="dots">:</span>
+        <span class="numbs" id="seconds">00</span>
+      </div>
+    </div>
+    <div class="down">
+      <div class="set">
+        <input placeholder="00" type="number" min="0" max="23" de name="hour" id="hourIn">:
+        <input placeholder="00" type="number" min="0" max="60" name="minutes" id="minutesIn">:
+        <input placeholder="00" type="number" min="0" max="60" name="seconds" id="secondsIn">
+      </div>
+      <div class="options">
+        <button id="setH" onclick="setTime()">Set Hour</button>
+        <button id="pomodoro" onclick="pomodoro()">Pomodoro</button>
+      </div>
+      <button id="control" class="stop" hidden onclick="startStop()">STOP</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
